@@ -1,0 +1,98 @@
+@keyframes scroll-to-top {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-and-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+@keyframes bouncing {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    top: 0;
+  }
+  50%,
+  70% {
+    top: -10px;
+  }
+}
+@keyframes left-move {
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes right-move {
+  50% {
+    right: 50%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes animate {
+  50% {
+    right: 50%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes move-arrow {
+  100% {
+    transform: translateX(10px);
+    color: $mainColorAlt;
+  }
+}
+@keyframes flashing {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+@keyframes popular {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    top: 0;
+  }
+  50%,
+  70% {
+    top: -20px;
+  }
+}
+
+@keyframes change-background {
+  0%,
+  100% {
+    background-image: url(/images/discount-background1.jpg);
+  }
+  50% {
+    background-image: url(/images/discount-background2.jpg);
+  }
+}

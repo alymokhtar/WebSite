@@ -1,0 +1,64 @@
+.header {
+  position: relative;
+  box-shadow: 0 0 10px #ddd;
+  .container {
+    @include centering;
+    flex-wrap: wrap;
+    div {
+      @extend .logo;
+      height: 60px;
+      a {
+        color: $mainColor;
+        font-size: 20px;
+      }
+      span {
+        font-family: "Ephesis", cursive;
+        font-size: 50px;
+      }
+      @media (max-width: 767px) {
+        margin: 10px auto 0;
+      }
+    }
+    .nav {
+      display: flex;
+      > li {
+        // width: 100%;
+        > a {
+          color: black;
+          @include centering;
+          height: 60px;
+          position: relative;
+          padding: 0 30px;
+          transition: $mainTransition;
+          overflow: hidden;
+          &::before {
+            content: "";
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            transition: $mainTransition;
+          }
+          &:hover {
+            color: $mainColor;
+            background-color: #fafafa;
+            left: 0;
+            &::before {
+              left: 0;
+              background-color: $mainColor;
+            }
+          }
+          @media (max-width: 767px) {
+            padding: 0 10px;
+            height: 40px;
+            font-size: 12px;
+          }
+        }
+      }
+      @media (max-width: 767px) {
+        margin: auto;
+      }
+    }
+  }
+}
