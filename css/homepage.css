@@ -1790,7 +1790,7 @@ html {
 }
 
 .discount .discount-info {
-  background-image: url(/images/discount-background1.jpg);
+  background-image: url(../images/discount-background1.jpg);
   color: #fff;
   text-align: center;
   -ms-flex-preferred-size: 50%;
