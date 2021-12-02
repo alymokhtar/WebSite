@@ -6,6 +6,7 @@ window.onscroll = function () {
     span.classList.remove("show");
   }
 };
+
 span.onclick = function () {
   window.scrollTo({
     top: 0,
