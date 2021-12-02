@@ -1686,7 +1686,7 @@ html {
   padding-bottom: 100px;
   position: relative;
   text-align: center;
-  background-image: url(/images/stats.jpg);
+  background-image: url(../images/stats.jpg);
   position: relative;
 }
 
@@ -2175,7 +2175,7 @@ html {
 }
 
 .dots {
-  background-image: url(/images/dots.png);
+  background-image: url(../../../images/dots.png);
   height: 186px;
   width: 204px;
   position: absolute;
