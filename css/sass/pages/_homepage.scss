@@ -624,7 +624,7 @@
             background-color: $mainColor;
             height: 100%;
             display: block;
-            transition: $mainTransition;
+            transition: $mainTransition + 0.5s;
             &:hover {
               background-color: $mainColorAlt;
             }

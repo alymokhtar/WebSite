@@ -36,3 +36,26 @@ let counter = setInterval(() => {
   }
 }, 1000);
 // End Event
+// Start Our Skills
+let ourSkllsSection = document.getElementById("our-skills");
+let spans = document.querySelectorAll(".progress span");
+let howItWorkSection = document.getElementById("how-it-work");
+let servicesSection = document.getElementById("services");
+window.onscroll = function () {
+  if (window.scrollY >= ourSkllsSection.offsetTop - 100) {
+    spans.forEach((spans) => {
+      spans.style.width = spans.dataset.width;
+    });
+  }
+  if (window.scrollY >= howItWorkSection.offsetTop - 100) {
+    spans.forEach((spans) => {
+      spans.style.width = 0;
+    });
+  }
+  if (window.scrollY <= servicesSection.offsetTop) {
+    spans.forEach((spans) => {
+      spans.style.width = 0;
+    });
+  }
+};
+// End Our Skills
