@@ -220,6 +220,23 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2196f3b5;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2196f3;
+}
+
 .up {
   color: #2196f3;
   width: 30px;
@@ -2245,8 +2262,8 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 20px;

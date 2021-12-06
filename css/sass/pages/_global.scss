@@ -18,3 +18,19 @@ a {
 html {
   scroll-behavior: smooth;
 }
+//Start Scroll Bar Effect
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2196f3b5;
+  border-radius: 5px;
+  &:hover {
+    background-color: $mainColor;
+  }
+}
+
+//End Scroll Bar Effect
