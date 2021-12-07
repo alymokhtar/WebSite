@@ -59,3 +59,27 @@ window.onscroll = function () {
   }
 };
 // End Our Skills
+// Start Stats
+// let numbers = document.querySelectorAll(".stats .number");
+// let section = document.querySelector(".stats");
+// started = false;
+
+// window.onscroll = function () {
+//   if (window.scrollY >= section.offsetTop - 300) {
+//     if (started === false) {
+//       numbers.forEach((number) => startCount(number));
+//     }
+//     started = true;
+//   }
+// };
+
+// function startCount(e) {
+//   let goal = e.dataset.goal;
+//   let counter = setInterval(() => {
+//     e.textContent++;
+//     if (e.textContent == goal) {
+//       clearInterval(counter);
+//     }
+//   }, 2000 / goal);
+// }
+// End Stats
